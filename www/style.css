@@ -1,0 +1,82 @@
+/* Importando as fontes que vou utilizar no aplicativo: */
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park|Open+Sans+Condensed:300|Raleway&display=swap');
+
+/* Alterando propriedades dos H2: */
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Alterando propriedades das labels: */
+label.control-label {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Alterando propriedades de alguns outros textos:  */
+.input-group .form-control::placeholder, #oque::placeholder, #praoque::placeholder, input{
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+/* Alterando propriedades do botão de baixar: */
+#baixar {
+  /* Alterando a fonte: */
+  font-family: 'Raleway', sans-serif;
+  
+  /* Posicionando no centro/baixo da página: */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* Alterando o tamanho da caixa: */
+  width: 99%;
+}
+
+/* Atualizando propriedades dos botões em geral: */
+.btn-default:hover {
+  background-color: #FF7400 !important;
+  color: #FFF6EB !important;
+  border-color: #BCA79C !important;
+}
+
+/* Atualizando propriedades da tabela de informações: */
+/*   - Não consegui posicionar onde queria :(         */
+#tabela-info {
+}
+
+/* Alterando algumas opções de barras de progresso: */
+.progress-bar {
+  background-color: #FF7400;
+}
+
+/* Opções dos formulários: */
+.input-group .form-control, .form-control {
+  background-color: #FFF6EB;
+}
+
+/* Definindo a animação que usei no fundo do aplicativo: */
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Modificando o fundo do corpo do aplicativo: */
+body {
+  background: linear-gradient(-45deg, #fee9e5, #ffdeda, #ffd4d1, #ffc9c8, #ffbec1);
+  background-size: 1000% 1000%;
+  animation: gradientBG 7.5s ease infinite;
+}
+
+/* Modificando o texto abaixo das tabelas: */
+.dataTables_wrapper .dataTables_info {
+  position: relative;
+  left: 25%;
+  color: #580000 !important;
+}
